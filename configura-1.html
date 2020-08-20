@@ -23,10 +23,6 @@
     <link rel="stylesheet" href="assets/css/icon.css">
     <link rel="stylesheet" href="assets/css/system.css">
 
-    <style type="text/css">
-      /*body { background-color: #CCC; }*/
-    </style>
-
   </head>
   <body>
 
@@ -51,65 +47,68 @@
             </div>
 
 
-            <h2 class="title-bold py-3">Configura en 3 simples pasos</h2>
+            <!-- <h3 class="title-bold py-3">Configura tu Lili en 3 simples pasos</h3> -->
 
-            <h3 class="title mb-5">Datos personales</h3>
+            <span class="h6 text-muted m-0">Paso 1</span>
+            <h2 class="title mb-5">Datos personales</h2>
             
             
             <div class="form-group mb-4">
-              <label class="text-muted h5">¿Cual es tu edad?</label>
-              <input type="text" class="form-control rounded-0 text-center control-animate" aria-describedby="edad" maxlength="2" value="30">
+              <label class="text-muted h5">¿Cuál es tu edad?</label>
+              <div class="label-hv-animate"><input type="text" class="form-control rounded-0 text-center control-animate border-0 bg-light" aria-describedby="edad" maxlength="2" value="" placeholder="30"></div>
             </div>
 
 
 
             <div class="form-group mb-4">
-              <label class="text-muted h5" >¿Tienes cargas?, <br>si las tienes ingresalas con sus edades</label>
-              <!-- <div class="custom-control custom-switch float-right">
-                <input type="checkbox" class="custom-control-input" id="sumarcargas">
-                <label class="custom-control-label" for="customSwitch1">Si</label>
-              </div> -->
-              <a class="h5 float-right btn text-col5 text-hv-col pr-0" data-toggle="collapse" href="#collapsesumarcargas" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Si, Tiengo cargas
+              <label class="text-muted h5" >¿Tienes cargas? <br> Si las tienes ingrésalas con sus edades</label>
+
+              <a class="h5 float-right btn text-col5 text-hv-col pr-0" data-toggle="collapse" href="#sumarcargas" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Si, Tengo cargas
               </a>
+
             </div>
-            <div class="collapse" id="collapsesumarcargas">
+
+            <div class="collapse" id="sumarcargas">
               <div class="form-group row">
                 <label class="col-2 col-form-label h5 text-muted">Carga 1</label>
                 <div   class="col-3 input-group">
-                  <input type="text" class="form-control text-center rounded-0" maxlength="2" placeholder="0">
+                  <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0">
                   <div class="input-group-prepend">
                     <div class="input-group-text  bg-white border-0">Años</div>
                   </div>
                 </div>
-                <div class="col-7">
-                  <a href="#" class="h5 float-right btn text-col5 text-hv-col">+ Añadir cargas</a>
-                </div>
-              </div>
 
-              <div class="form-group row mb-5">
-                <label class="col-2 col-form-label h5 text-muted">Carga 2</label>
-                <div   class="col-3 input-group">
-                  <input type="text" class="form-control text-center rounded-0" maxlength="2" placeholder="0">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text  bg-white border-0">Años</div>
+                <div class="col-7">
+                    <a  class="h5 float-right btn text-col5 text-hv-col" data-toggle="collapse" href="#carga2" role="button" aria-expanded="false" aria-controls="collapseExample">+ Añadir cargas</a>
                   </div>
                 </div>
-              </div>
+            </div>
+
+            <div class="collapse" id="carga2">
+                <div class="form-group row mb-5">
+                  <label class="col-2 col-form-label h5 text-muted">Carga 2</label>
+                  <div   class="col-3 input-group">
+                    <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text  bg-white border-0">Años</div>
+                    </div>
+                  </div>
+                </div>
             </div>
 
 
             <div class="form-group mb-4">
               <label class="text-muted h5">Indícanos tu renta imponible estimada</label>
-              <input type="text" class="form-control rounded-0 text-center control-animate" aria-describedby="renta imponible" placeholder="$500.000">
+              <div class="label-hv-animate"><input type="text" class="form-control rounded-0 text-center control-animate border-0 bg-light" aria-describedby="renta imponible" placeholder="$500.000"></div>
             </div>
 
 
         
 
             <div class="form-group mt-5">
-              <a href="configura-2.html" class="btn btn-primary btn-lg btn-block">Siguente</a>
-              <!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Siguente</button> -->
+              <a href="configura-2.html" class="btn bg-col5 text-white d-block mx-auto float-md-right my-2 py-3 px-4 shadow-lg mr-1 btn-bubble">Siguente</a>
+              <a href="index.html" class="btn float-md-right text-col5 text-hv-col5 d-block mx-auto mr-md-2 my-2 py-3 px-4 btn-bubble">Volver</a>
             </div>
 
 
@@ -120,14 +119,7 @@
     </section>
 
 
-<!--     <footer class="container-fluid bg-info">
-      <div class="container">
-        <div class="row">
-          Footer
-        </div>
-      </div>
-    </footer> -->
-
+    
 
 
 <!-- JS -->
