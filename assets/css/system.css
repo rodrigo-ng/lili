@@ -1,32 +1,39 @@
 /*++++++++++++++++++++++++++++++++++++*/
 /*Colores del sistema (Cursos)*/
-.bg-col1 { background-color: #05787e; } /*Azul oscuro*/
-.bg-col2 { background-color: #eaf2f7 } /*Celeste claro*/
+.bg-col1 { background-color: #80aede; } /*Azul oscuro*/
+.bg-col2 { background-color: #ffc107cc } /*Celeste claro*/
 .bg-col3 { background-color: #79cbde; }   /*Celeste oscuro*/
 .bg-col4 { background-color: #; } 
-.bg-col5 { background-color: #ff9938; } /*Naranjo*/
+.bg-col5 { background-color: #ff8700; } /*Naranjo*/
+.bg-col6 { background-color: #ff394e; } /*Rojo*/
 
-.text-col1 { color: #05787e; }
+.text-col1 { color: #006aff; } /*Naranjo---*/
 .text-col2 { color: #eaf2f7 }
 .text-col3 { color: #79cbde; }
 .text-col4 { color: #; }
-.text-col5 { color: #ff9938; }
+.text-col5 { color: #ff8700; }
+.text-col6 { color: #ff394e; }
 
-
-.text-hv-col1:hover { color: #05787e; }
-.text-hv-col2:hover { color: #eaf2f7}
+.text-hv-col1:hover { color: #80aede; }
+.text-hv-col2:hover { color: #ffc107cc}
 .text-hv-col3:hover { color: #79cbde;}
 .text-hv-col4:hover { color: #; }
-.text-hv-col5:hover { color: #ff9938; }
+.text-hv-col5:hover { color: #ff8700; }
+.text-hv-col6:hover { color: #ff394e; }
 
-
-.border-col1 { border-color:#05787e; }
-.border-col2 { border-color:#eaf2f7; }
+.border-col1 { border-color:#80aede; }
+.border-col2 { border-color:#ffc107cc; }
 .border-col3 { border-color:#79cbde; }
 .border-col4 { border-color:#; }
-.border-col5 { border-color:#ff9938; }
+.border-col5 { border-color:#ff8700; }
+.border-col6 { border-color:#ff394e; }
 
 
+input { height: 55px!important; }
+
+/*****************************/
+/*Row - margin negativo doble*/
+/*****************************/
 .row-fluid {
     display: -ms-flexbox;
     display: flex;
@@ -35,6 +42,13 @@
     margin-right: -24px;
     margin-left: -24px;
 }
+
+/*****************************/
+/*Rotacion */
+/*****************************/
+.arrow:after { content: '';
+        posi
+       }
 
 
 /*****************************/
@@ -74,8 +88,8 @@
  }
 
 .custom-control-input:checked~.custom-control-label::before {
-    border-color: #ff9938!important;
-    background-color: #ff9938!important;
+    border-color: #ff8700!important;
+    background-color: #ff8700!important;
 }
 
 
@@ -174,7 +188,7 @@
 /*****************************/
 /* Forma SVG */
 /*****************************/
-.label-hv-animate { position: relative; display: block; height: auto; min-height: 41px; width: auto;  }
+.label-hv-animate { position: relative; display: block; height: auto; min-height: 55px; width: auto;  }
 .label-hv-animate::before  {  content: ''; 
 							  position: absolute; 
 							  bottom: 0px;  
@@ -186,7 +200,7 @@
 							  transition-delay: 0.20s, 0.20s, 0.20s;
 							  background-color: rgba(0,0,0,0.15);   
 						    }
-.label-hv-animate:hover::before { background-color: rgba(255,153,56,1);  }
+.label-hv-animate:hover::before { background-color: #ff8700; /*rgba(0,123,255,1);*/  }
 
 
 /*
@@ -241,3 +255,15 @@
 .dynamicanchor-footer  {
 	bottom: 40px; right: 0px; height: 40px; width: 40px; line-height: 35px;
 }
+
+
+.divisor-right:before { 
+	             content: "\0077";
+	             position: absolute;
+	             top: 5px;
+	             left:-25px;
+	             font-family: 'ico';
+	             color: #80aede;
+	             font-size:1.25em;
+
+               }

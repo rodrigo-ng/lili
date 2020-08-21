@@ -1,14 +1,14 @@
 /*Font family*/
 
-/*@font-face {
-    font-family: 'OpenSans';
-        src: url('../fonts/HelveticaNeue.eot');
-        src: url('../fonts/HelveticaNeue.eot?#HelveticaNeue') format('embedded-opentype'), 
-        url('../fonts/HelveticaNeue.woff2') format('woff2'), 
-        url('../fonts/HelveticaNeue.woff') format('woff'), 
-        url('../fonts/HelveticaNeue.ttf') format('truetype'), 
-        url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
-}*/
+@font-face {
+    font-family: 'Baloo';
+        src: url('../fonts/BalooTamma2-Regular.eot');
+        src: url('../fonts/BalooTamma2-Regular.eot?#BalooTamma2-Regular') format('embedded-opentype'), 
+        url('../fonts/BalooTamma2-Regular.woff2') format('woff2'), 
+        url('../fonts/BalooTamma2-Regular.woff') format('woff'), 
+        url('../fonts/BalooTamma2-Regular.ttf') format('truetype'), 
+        url('../fonts/BalooTamma2-Regular.svg#BalooTamma2-Regular') format('svg');
+}
 
 @font-face {
     font-family: 'Mirage';
@@ -72,7 +72,7 @@ html {
 
 
 body {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Baloo', 'OpenSans', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
