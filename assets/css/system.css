@@ -46,14 +46,6 @@ input { height: 55px!important; }
 /*****************************/
 /*Rotacion */
 /*****************************/
-.arrow:after { content: '';
-        posi
-       }
-
-
-/*****************************/
-/*Rotacion */
-/*****************************/
 .rotate-m90 {
 	-ms-transform: rotate(-90deg); /* IE 9 */
      transform: rotate(-90deg);
