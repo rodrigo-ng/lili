@@ -25,9 +25,9 @@
 
 
   </head>
-  <body>
+  <body class="bg-col3">
 
-    <header class="container-fluid bg-white pt-3">
+    <header class="container-fluid pt-3 mb-3">
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -48,7 +48,7 @@
             </div>
 
 
-            <span class="h6 text-muted m-0">Paso 3</span>
+            <span class="h6 text-muted m-0">Paso 4</span>
             <h2 class="title mb-5">Tu resumen</h2>
 
 
@@ -56,13 +56,13 @@
 
             
             <div class="form-group">
-              <h4 class="font-weight-bold text-col5">Tu plan podría ser:</h4>
+              <h4 class="font-weight-bold text-col1">Tu plan podría ser:</h4>
             </div>
             <div class="d-block w-100 pb-3 mb-3">
               <div class="row">
-                <div class="col-12 text-col5"><span class="h5">Prima</span></div>
+                <div class="col-12 text-col1"><span class="h5">Prima</span></div>
                 <div class="col-3">
-                  <h3 class="font-weight-bold title text-col5 mb-0">UF 6,87</h3>
+                  <h3 class="font-weight-bold title text-col1 mb-0">UF 6,87</h3>
                   <h4 class="text-black-50">$197.169</h4>
                 </div>
                 <div class="col-9 divisor-right"> 
@@ -79,9 +79,9 @@
                   <div class="d-block w-100 pt-2 px-4 h6 bg-light ">
                     <div class="row border-bottom py-1">
                       <div class="col-4 font-weight-bold text-left text-muted"></div>
-                      <div class="col-2 font-weight-bold text-left text-muted">Base</div>
-                      <div class="col-2 font-weight-bold text-left text-muted">Factor</div>
-                      <div class="col-2 font-weight-bold text-left text-muted">GES</div>
+                      <div class="col-2 font-weight-bold text-left text-muted">Precio Base</div>
+                      <div class="col-2 font-weight-bold text-left text-muted">Factor etario</div>
+                      <div class="col-2 font-weight-bold text-left text-muted">Valor <br>GES</div>
                       <div class="col-2 font-weight-bold text-right text-muted">Valor final</div>
                     </div>
                     <div class="row border-bottom py-1">
@@ -107,7 +107,11 @@
                     </div>
                     <div class="row py-3">
                      <div class="col-12">
-                      <h5 class="text-muted font-italic">*Todos los valores estan expresados en UF</h5>
+                      <h5 class="text-muted font-italic">
+                        *Todos los valores estan expresados en UF
+                        <br>
+                        Valor final = base * factor + GES
+                      </h5>
                     </div>
                   </div>
 
@@ -125,9 +129,9 @@
             
             <div class="d-block w-100 pb-3 mb-3">
               <div class="row">
-                <div class="col-12 text-col5"><span class="h5">Deducible anual</span></div>
+                <div class="col-12 text-col1"><span class="h5">Deducible anual</span></div>
                 <div class="col-3">
-                  <h3 class="font-weight-bold title text-col5 mb-0">UF 10</h3>
+                  <h3 class="font-weight-bold title text-col1 mb-0">UF 10</h3>
                   <h4 class="text-black-50">$287.000 <small>(individual)</small></h4>
                 </div>
                 <div class="col-9 divisor-right">  
@@ -140,9 +144,9 @@
             
             <div class="d-block w-100 pb-3 mb-3">
               <div class="row">
-                <div class="col-12 text-col5"><span class="h5">Tope anual</span></div>
+                <div class="col-12 text-col1"><span class="h5">Tope anual</span></div>
                 <div class="col-3">
-                  <h3 class="font-weight-bold title text-col5 mb-0">UF 200</h3>
+                  <h3 class="font-weight-bold title text-col1 mb-0">UF 200</h3>
                   <h4 class="text-black-50">$5.740.000 <small>(individual)</small></h4>
                 </div>
                 <div class="col-9 divisor-right">  
@@ -164,12 +168,12 @@
   
 
                 <div class="form-group border-bottom">
-                  <h4 class="font-weight-bold text-col5">Tus coberturas podrían ser:</h4>
+                  <h4 class="font-weight-bold text-col1">Tus coberturas podrían ser:</h4>
                 </div>
              
                  <div class="d-block w-100 mb-3">
                   <div class="row">
-                    <div class="col-3"><h3 class="font-weight-bold title text-col5 mb-0">100%</h3></div>
+                    <div class="col-3"><h3 class="font-weight-bold title text-col1 mb-0">100%</h3></div>
                     <div class="col-9 divisor-right">
                       <p class="text-secondary">
                       Médico de cabecera.<br>
@@ -181,7 +185,19 @@
 
                  <div class="d-block w-100 mb-3">
                   <div class="row">
-                    <div class="col-3"><h3 class="font-weight-bold title text-col5 mb-0">70%</h3></div>
+                    <div class="col-3"><h3 class="font-weight-bold title text-col1 mb-0">80%</h3></div>
+                    <div class="col-9 divisor-right">
+                      <p class="text-secondary">
+                      Hospitalizaciones.<br>
+                      Después de deducible y en Red seleccionada.
+                      </p>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="d-block w-100 mb-3">
+                  <div class="row">
+                    <div class="col-3"><h3 class="font-weight-bold title text-col1 mb-0">70%</h3></div>
                     <div class="col-9 divisor-right">
                       <p class="text-secondary">
                       Consultas, exámenes y procedimientos ambulatorios.<br>
@@ -194,19 +210,7 @@
 
                  <div class="d-block w-100 mb-3">
                   <div class="row">
-                    <div class="col-3"><h3 class="font-weight-bold title text-col5 mb-0">80%</h3></div>
-                    <div class="col-9 divisor-right">
-                      <p class="text-secondary">
-                      Hospitalizaciones.<br>
-                      Después de deducible y en Red seleccionada.
-                      </p>
-                    </div>
-                  </div>
-                 </div>
-
-                 <div class="d-block w-100 mb-3">
-                  <div class="row">
-                    <div class="col-3"><h3 class="font-weight-bold title text-col5 mb-0">20%</h3></div>
+                    <div class="col-3"><h3 class="font-weight-bold title text-col1 mb-0">20%</h3></div>
                     <div class="col-9 divisor-right">
                       <p class="text-secondary">
                       Derivaciones médico de cabecera.<br> 
@@ -220,112 +224,112 @@
 
 
             <div class="form-group mt-5">
-              <a href="#" class="btn bg-col5 text-white d-block mx-auto float-md-right my-2 mr-1 py-3 px-4 shadow-lg btn-bubble" data-toggle="modal" data-target="#exampleModal">Sí, lo quiero</a>
-              <a href="#" class="btn border-col5 float-md-right text-col5 text-hv-col5 d-block mx-auto my-2 mr-lg-3 py-3 px-4 btn-bubble"  data-toggle="modal" data-target="#nointeresa" >No me interesa</a>
-              <a href="configura-2.html" class="btn float-md-right text-col5 text-hv-col5 d-block mx-auto mr-md-2 my-2 py-3 px-4 btn-bubble">Volver</a>
+              <a href="#" class="btn bg-col1 text-white d-block mx-auto float-md-right my-2 mr-1 py-3 px-4 shadow-lg btn-bubble" data-toggle="modal" data-target="#exampleModal">Sí, lo quiero</a>
+              <a href="#" class="btn border-col1 float-md-right text-col1 text-hv-col1 d-block mx-auto my-2 mr-lg-3 py-3 px-4 btn-bubble"  data-toggle="modal" data-target="#nointeresa" >No me interesa</a>
+              <a href="configura-2.html" class="btn float-md-right text-col1 text-hv-col5 d-block mx-auto mr-md-2 my-2 py-3 px-4 btn-bubble">Volver</a>
             </div>
 
 
 
 
 
-  <!-- **************************************************************
-  Modal - Lo quiero
-  ************************************************************** -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-      <div class="modal-header border-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+            <!-- **************************************************************
+            Modal - Lo quiero
+            ************************************************************** -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                  <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
 
-      <div class="modal-body">
+                  <div class="modal-body">
 
-        <div class="d-block w-100">
-          <h2 class="title text-center ">¡Listo!</h2>
-          <h5 class="text-center text-secondary">Por favor, ingresa tu email para continuar con el proceso.</h5>
-        </div>
-         
-        <div class="px-4 mt-5">
-          <div class="d-block w-100 my-5">
-            <div class="label-hv-animate col-8 mx-auto p-0">
-              <input type="email" class="form-control rounded-0 text-center w-100 border-0 bg-light" aria-describedby="mail" placeholder="(Ejm.) minombre@ejemplo.com">
-            </div>
-          </div>
-        </div>
+                    <div class="d-block w-100">
+                      <h2 class="title text-center ">¡Listo!</h2>
+                      <h5 class="text-center text-secondary">Por favor, ingresa tu email para continuar con el proceso.</h5>
+                    </div>
+                     
+                    <div class="px-4 mt-5">
+                      <div class="d-block w-100 my-5">
+                        <div class="label-hv-animate col-8 mx-auto p-0">
+                          <input type="email" class="form-control rounded-0 text-center w-100 border-0 bg-light" aria-describedby="mail" placeholder="(Ejm.) minombre@ejemplo.com">
+                        </div>
+                      </div>
+                    </div>
 
-      </div>
+                  </div>
 
-      <div class="modal-footer border-0">
-        <a href="#" class="btn bg-col5 text-white d-block mx-auto my-2 py-2 px-4 btn-bubble" data-dismiss="modal">Enviar</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- **************************************************************
-Modal - No me interesa
-************************************************************** -->
-<div class="modal fade" id="nointeresa" tabindex="-1"  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header border-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-        <div class="d-block w-100">
-          <h2 class="title text-center m-0">Cuéntanos</h2>
-          <h5 class="text-center text-secondary">¿Por qué no te interesa Lili?</h5>
-        <div>
-        <div class="px-4 mt-5">
-            <div class="custom-control custom-radio sd-option-list mb-3">
-              <input type="radio" id="nomeinteresa1" name="deducible" class="custom-control-input">
-              <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa1">
-                Lorem ipsum in dore ement noque porro 
-              </label>
+                  <div class="modal-footer border-0">
+                    <a href="#" class="btn bg-col1 text-white d-block mx-auto my-2 py-2 px-4 btn-bubble" data-dismiss="modal">Enviar</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="custom-control custom-radio sd-option-list mb-3">
-              <input type="radio" id="nomeinteresa2" name="deducible" class="custom-control-input">
-              <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa2">
-                Lorem ipsum in dore ement
-              </label>
-            </div>
 
-            <div class="custom-control custom-radio sd-option-list mb-3">
-              <input type="radio" id="nomeinteresa3" name="deducible" class="custom-control-input">
-              <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa3">
-                Lorem ipsum in dore ement
-              </label>
-            </div>
 
-            <div class="custom-control custom-radio sd-option-list mb-3">
-              <input type="radio" id="nomeinteresa4" name="deducible" class="custom-control-input">
-              <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa4">
-                Otra razón
-              </label>
+            <!-- **************************************************************
+            Modal - No me interesa
+            ************************************************************** -->
+            <div class="modal fade" id="nointeresa" tabindex="-1"  aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="d-block w-100">
+                      <h2 class="title text-center m-0">Cuéntanos</h2>
+                      <h5 class="text-center text-secondary">¿Por qué no te interesa Lili?</h5>
+                    <div>
+                    <div class="px-4 mt-5">
+                        <div class="custom-control custom-radio sd-option-list mb-3">
+                          <input type="radio" id="nomeinteresa1" name="deducible" class="custom-control-input">
+                          <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa1">
+                            Lorem ipsum in dore ement noque porro 
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio sd-option-list mb-3">
+                          <input type="radio" id="nomeinteresa2" name="deducible" class="custom-control-input">
+                          <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa2">
+                            Lorem ipsum in dore ement
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio sd-option-list mb-3">
+                          <input type="radio" id="nomeinteresa3" name="deducible" class="custom-control-input">
+                          <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa3">
+                            Lorem ipsum in dore ement
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio sd-option-list mb-3">
+                          <input type="radio" id="nomeinteresa4" name="deducible" class="custom-control-input">
+                          <label class="custom-control-label text-secondary h5 pt-2" for="nomeinteresa4">
+                            Otra razón
+                          </label>
+                        </div>
+                        <div class="custom-control row mb-3">
+                          <div class="label-hv-animate"><textarea class="form-control border-0 rounded-0 bg-light" rows="3" placeholder="Escribe tu comentario aquí..."></textarea></div>
+                        </div>
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer border-0">
+                    <a href="#" class="btn bg-col1 text-white d-block mx-auto my-2 py-2 px-4 btn-bubble" data-dismiss="modal">Enviar</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="custom-control row mb-3">
-              <div class="label-hv-animate"><textarea class="form-control border-0 rounded-0 bg-light" rows="3" placeholder="Escribe tu comentario aquí..."></textarea></div>
-            </div>
-        </div>
-        
-      </div>
-      <div class="modal-footer border-0">
-        <a href="#" class="btn bg-col5 text-white d-block mx-auto my-2 py-2 px-4 btn-bubble" data-dismiss="modal">Enviar</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
