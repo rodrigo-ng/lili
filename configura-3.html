@@ -48,15 +48,32 @@
             </div>
 
 
-            <span class="h6 text-muted m-0">Paso 4</span>
+            <span class="h6 text-black-50 m-0">Paso 4</span>
             <h2 class="title mb-5">Tu resumen</h2>
 
 
 
 
             
+            <div class="form-group pb-4 mb-5">
+              <ul class="list-unstyled mt-md-4">
+                <li class="media">
+                 
+                  <div class="media-body text-secondary text-center">
+                     <img src="assets/images/diamond.svg" class="mh-resulticon" alt="plan diamante">
+                     <!-- <h3 class="title-bold text-dark">Con Lili <span class="text-col1">pagarás menos</span><br>  que tu plan actual, incluso con más beneficios</h3> -->
+
+                     <!-- <h3 class="title-bold text-dark">Con Lili pagarás lo mismo<br> que tu plan actual, pero<br><span class="text-col1">con más beneficios</span></h3> -->
+
+                     <h3 class="title-bold text-dark">Con Lili pagarás más <br>que tu plan actual,<br> <span class="text-col1">pero con muchos más beneficios</span></h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
             <div class="form-group">
-              <h4 class="font-weight-bold text-col1">Tu plan podría ser:</h4>
+              <!-- <h4 class="font-weight-bold text-col1">Tu plan podría ser:</h4> -->
+              <h4 class="font-weight-bold text-col1">Detalle</h4>
             </div>
             <div class="d-block w-100 pb-3 mb-3">
               <div class="row">
@@ -77,6 +94,9 @@
               <div class="collapse" id="detallecobro">
                   
                   <div class="d-block w-100 pt-2 px-4 h6 bg-light ">
+                    <div class="row py-1 font-weight-bold text-left text-muted">
+                        <div class="col-12 font-weight-bold h4">Desglose </div>
+                    </div>
                     <div class="row border-bottom py-1">
                       <div class="col-4 font-weight-bold text-left text-muted"></div>
                       <div class="col-2 font-weight-bold text-left text-muted">Precio Base</div>
@@ -106,15 +126,47 @@
                       <div class="col-2 text-right text-muted">1,88</div>
                     </div>
                     <div class="row py-3">
-                     <div class="col-12">
-                      <h5 class="text-muted font-italic">
-                        *Todos los valores estan expresados en UF
-                        <br>
-                        Valor final = base * factor + GES
-                      </h5>
+                      <div class="col-12">
+                        <h5 class="text-muted font-italic">
+                          *Todos los valores estan expresados en UF
+                          <br>
+                          Valor final = base * factor + GES
+                        </h5>
+                      </div>
                     </div>
                   </div>
 
+
+                  <div class="d-block w-100  pt-2 px-4 h6 bg-light">
+                      <div class="row py-1 font-weight-bold text-left text-muted">
+                        <div class="col-12 font-weight-bold h4">Tabla factor etario </div>
+                      </div>
+                      <div class="row py-1 font-weight-bold text-left text-muted">
+                        <div class="col-6 font-weight-bold text-left text-muted">Tramo de edad</div>  
+                        <div class="col-3 text-center">Cotizante</div> 
+                        <div class="col-3 text-center">Carga</div>
+                      </div>
+                      <div class="row py-1 text-muted">
+                        <div class="col-6">0 a menos de 20 años</div>  <div class="col-3 text-center">0,6</div> <div class="col-3 text-center">0,6</div>
+                      </div>   
+                      <div class="row py-1 text-muted"> 
+                        <div class="col-6">20 a menos de 25 años</div> <div class="col-3 text-center">0,9</div> <div class="col-3 text-center">0,7</div>
+                      </div>  
+                      <div class="row py-1 text-muted"> 
+                        <div class="col-6">25 a menos de 35 años</div> <div class="col-3 text-center">1,0</div> <div class="col-3 text-center">0,7</div>
+                      </div>  
+                      <div class="row py-1 text-muted"> 
+                        <div class="col-6">35 a menos de 45 años</div> <div class="col-3 text-center">1,3</div> <div class="col-3 text-center">0,9</div>
+                      </div>  
+                      <div class="row py-1 text-muted">  
+                        <div class="col-6">45 a menos de 55 años</div> <div class="col-3 text-center">1,4</div> <div class="col-3 text-center">1,0</div>
+                      </div>  
+                      <div class="row py-1 text-muted"> 
+                        <div class="col-6">55 a menos de 65 años</div> <div class="col-3 text-center">2,0</div> <div class="col-3 text-center">1,4</div>
+                      </div>  
+                      <div class="row py-1 text-muted"> 
+                        <div class="col-6">65 años y más</div>         <div class="col-3 text-center">2,4</div>  <div class="col-3 text-center">2,2</div>
+                      </div>
                   </div>
                   
 
@@ -226,7 +278,7 @@
             <div class="form-group mt-5">
               <a href="#" class="btn bg-col1 text-white d-block mx-auto float-md-right my-2 mr-1 py-3 px-4 shadow-lg btn-bubble" data-toggle="modal" data-target="#exampleModal">Sí, lo quiero</a>
               <a href="#" class="btn border-col1 float-md-right text-col1 text-hv-col1 d-block mx-auto my-2 mr-lg-3 py-3 px-4 btn-bubble"  data-toggle="modal" data-target="#nointeresa" >No me interesa</a>
-              <a href="configura-2.html" class="btn float-md-right text-col1 text-hv-col5 d-block mx-auto mr-md-2 my-2 py-3 px-4 btn-bubble">Volver</a>
+              <a href="configura-2.html" class="btn float-md-right text-col1 text-hv-col1 d-block mx-auto mr-md-2 my-2 py-3 px-4 btn-bubble">Volver</a>
             </div>
 
 
