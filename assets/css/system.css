@@ -4,28 +4,28 @@
 .bg-col2 { background-color: #6a7895; } /*Gis Oscuro*/
 .bg-col3 { background-color: #eff3f9; } /*Gris claro*/
 .bg-col4 { background-color: #374162; } /*Azul Oscuro*/
-.bg-col5 { background-color: #e89460; } /*Naranjo*/
+.bg-col5 { background-color: #ff5907; } /*Naranjo*/
 .bg-col6 { background-color: #f75454; } /*Rojo*/
 
 .text-col1 { color: #00dda2; } 
 .text-col2 { color: #6a7895; }
 .text-col3 { color: #eff3f9; }
 .text-col4 { color: #374162; }
-.text-col5 { color: #e89460; }
+.text-col5 { color: #ff5907; }
 .text-col6 { color: #f75454; }
 
 .text-hv-col1:hover { color: #00dda2; }
 .text-hv-col2:hover { color: #6a7895; }
 .text-hv-col3:hover { color: #eff3f9; }
 .text-hv-col4:hover { color: #374162; }
-.text-hv-col5:hover { color: #e89460; }
+.text-hv-col5:hover { color: #ff5907; }
 .text-hv-col6:hover { color: #f75454; }
 
 .border-col1 { border-color:#00dda2; }
 .border-col2 { border-color:#6a7895; }
 .border-col3 { border-color:#eff3f9; }
 .border-col4 { border-color:#374162; }
-.border-col5 { border-color:#e89460; }
+.border-col5 { border-color:#ff5907; }
 .border-col6 { border-color:#f75454; }
 
 
@@ -259,6 +259,16 @@ input { height: 55px!important; }
     right: 0;
     margin: 0 -15px;
 }
+
+
+
+/*****************************/
+/* Altura de carrusel */
+/*****************************/
+@media (min-width: 768px) {
+  .h-carrusel { height: 380px; }
+}
+
 
 /*****************************/
 /* Ancla dinamica */
