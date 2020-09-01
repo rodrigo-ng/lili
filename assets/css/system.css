@@ -56,6 +56,35 @@ input { height: 55px!important; }
 
 
 /*****************************/
+/* Ancho en PX */
+/*****************************/
+.w-10px  { width: 10px; }
+.w-20px  { width: 20px; }
+.w-30px  { width: 30px; }
+.w-40px  { width: 40px; }
+.w-50px  { width: 50px; }
+.w-60px  { width: 60px; }
+.w-70px  { width: 70px; }
+.w-80px  { width: 80px; }
+.w-90px  { width: 90px; }
+.w-100px { width: 100px; }
+
+
+/*****************************/
+/* Alto en PX */
+/*****************************/
+.h-10px  { height: 10px; }
+.h-20px  { height: 20px; }
+.h-30px  { height: 30px; }
+.h-40px  { height: 40px; }
+.h-50px  { height: 50px; }
+.h-60px  { height: 60px; }
+.h-70px  { height: 70px; }
+.h-80px  { height: 80px; }
+.h-90px  { height: 90px; }
+.h-100px { height: 100px; }
+
+/*****************************/
 /* Iconos */
 /*****************************/
 .mh-buleticon  { max-height: 55px; }
@@ -86,8 +115,8 @@ input { height: 55px!important; }
 
 .sd-option-list .custom-control-label::before, 
 .sd-option-list  .custom-control-label::after {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2rem;
+    height: 2rem;
  }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -104,8 +133,8 @@ input { height: 55px!important; }
 /*****************************/
 /*Radio button Boostrap  */
 /*****************************/
-.list-inputradio li {display: block; padding-left: 1rem; padding-bottom: .25rem; width: 100%;}
-
+.list-inputradio li {display: block; padding-bottom: .25rem; width: 100%;}
+.list-inputradio li:before { content: '\005E'; font-family: 'ico'; position: absolute; left: -5px; width: 15px; display: inline-block; font-weight: bold; color: #00dda2; }
 
 /*****************************/
 /* Boton acua */
@@ -132,7 +161,7 @@ input { height: 55px!important; }
                         
                     }
 .btn-bubble:hover::before { 
-						background-color: rgba(0,0,0,0.15);
+						            background-color: rgba(0,0,0,0.15);
                         height: 100%; 
                         width: 100%; 
                         -webkit-border-radius: 0%;
@@ -298,3 +327,75 @@ input { height: 55px!important; }
 .wave1:before { content: ''; position: absolute; top: 20px;  z-index: 0; height: 50px; width: 87px; background-image: url(../images/dm-min.png);}  
 .wave2:before { content: ''; position: absolute; left: -15px; top: 35px;  z-index: -2; display: block; height: 31px; width: 70px; background-image: url(../images/wave.png);}  
 .bg-texture { background-image: url(../images/body-bg.png);}               
+
+
+
+
+.playvideo { display: block; width: 100%; height: -webkit-fill-available; }
+
+
+
+
+
+
+/*****************************/
+/* Forma */
+/*****************************/
+.nav-tabs .active { color:#00dda2!important; }
+.nav-tabs .active:before  {
+     content: '';
+     position: absolute;
+     top: 40px;
+     width: 0;
+      height: 0;
+      border-left:  15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top:   15px solid #FFF;
+}
+
+
+.end-msg { font-size: 2em; }
+
+@media ( min-width: 576px ) {
+    .end-msg { font-size: 1.95em; }
+}
+
+
+
+
+/*****************************/
+/* Tabla Grilla RED v/s Deducible*/
+/*****************************/
+.line-redydedusible-head,
+.line-redydedusible  { border-bottom: 1px solid #dee2e6!important; padding: 0.45em 0em; /*margin-bottom:0.25em;*/ }
+.line-redydedusible:hover { background-color: rgba(0,0,0,0.025); }
+.line-redydedusible input[type=radio]  {clip: rect(0,0,0,0); pointer-events: none; display: none; }
+
+.line-redydedusible .btn-secondary { background-color: #f8f9fa!important; }
+.line-redydedusible .btn-secondary span { color: #00dda2; }
+.line-redydedusible label,
+.line-redydedusible label:hover    { border:solid 5px white; }
+.line-redydedusible label:hover    { background-color:#00dda2!important;}
+.line-redydedusible label:hover span { color:#FFF ; }
+.line-redydedusible label span     {  }
+
+.redydedusible { background-color: #00dda2; color: #FFF; }
+
+
+.list-red li { line-height: 0.95em; margin-bottom: 0.70em; }
+.list-red li:before { content: '\005E'; font-family: 'ico'; font-size: 0.85em; position: absolute; left: 0px; width: 15px; display: inline-block; font-weight: bold; color: #00dda2; }
+
+
+@media ( min-width: 576px ) {
+    .line-redydedusible .col-3 { min-height: 150px; }
+    .line-redydedusible .col-3 .red-title { 
+                                      position: absolute;
+                                      left: -15px;
+                                      top: 14px;
+                                      display: block;
+                                      -ms-transform: rotate(-90deg); /* IE 9 */
+                                      transform: rotate(-90deg);
+                                    }
+    .line-redydedusible .col-3 ul { width: 100%; padding-left: 23px; }
+    .line-redydedusible .col-3 .list-red li:before { font-size: 0.65em; left: 28px; font-weight: bold; }
+}       

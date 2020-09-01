@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/lilichile.png" alt="Logo Lili"></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/lili-chile.svg" alt="Logo Lili" class="h-40px" ></a>
           </div>
           <div class="col-6"></div>
         </div>
@@ -40,84 +40,83 @@
     <section class="container-fluid">
       <div class="container">
         <div class="row justify-content-md-center">
-          <form class="col-12 col-lg-6 rounded shadow-lg bg-white overflow-hidden p-4 mb-5">
+          <form class="col-12 col-lg-7 rounded shadow-lg bg-white overflow-hidden p-4 mb-5">
 
             <div class="progress row position-relative" style="height: 6px; top: -25px; margin: 0 -26px;">
               <div class="progress-bar stretchRight bg-col6" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
+
+
             <span class="h6 text-black-50 m-0">Paso 2</span>
             <h2 class="title mb-5">Datos personales</h2>
             
-            
-            <div class="form-group mb-5 pb-3">
-              <label class="text-col1  h4">¿Cuál es tu edad?</label>
-              <div class="label-hv-animate"><input type="text" class="form-control rounded-0 text-center control-animate border-0 bg-light" aria-describedby="edad" maxlength="2" value="" placeholder="30"></div>
+
+
+            <div class="form-group row mb-5">
+              <label class="col-9 col-form-label h4">¿Cuál es tu edad?</label>
+              <div class="col-3">
+                <input type="text" class="form-control rounded text-center control-animate border bg-light" aria-describedby="edad" maxlength="2" value="" placeholder="">
+              </div>
             </div>
 
 
-            <div class="mb-5 pb-3">
-              <div class="form-group">
-                <label class="text-col1 h4">¿Tienes cargas? <br>
-                  <span class="text-black-50 font-weight-light"> Si las tienes, ingrésalas con sus edades</span>
-                </label>
-
+            <div class="form-group row">
+              <label class="col-9 mb-0 col-form-label h4">¿Tienes cargas?</label>
+              <div class="col-3 mb-0">
                 <div class="float-right custom-control custom-switch">
                   <input type="checkbox" class="custom-control-input" id="tengocargas" data-toggle="collapse" data-target="#sumarcargas">
                   <label class="custom-control-label" for="tengocargas"></label>
                 </div>
               </div>
-              
-              <div class="collapse" id="sumarcargas">
-                <div class="form-group row">
-                  <div class="col-12">
-                    <a  class="float-right btn text-col5 text-hv-col5 h6 text-hv-col pr-0" data-toggle="collapse" href="#carga2" role="button" aria-expanded="false" aria-controls="collapseExample">+ Añadir nuevas cargas</a>
-                  </div> 
-                </div>
+              <div class="col-12"><span class="text-black-50 font-weight-light"> Si las tienes, ingrésalas con sus edades</span></div>
+            </div>
 
-                <div class="form-group row">
-                  <label class="col-2 col-form-label h5 text-muted pt-3">Carga 1</label>
+
+            <div class="collapse" id="sumarcargas">
+              
+              <div class="form-group row justify-content-end">
+                <div class="col-12">
+                  <a  class="float-right btn text-col1 text-hv-col1 text-hv-col1 h6 pr-0" data-toggle="collapse" href="#carga2" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="ic ic-user"></i> Incluircargas</a>
+                </div> 
+              </div>
+
+              <div class="form-group row justify-content-center">
+                <label class="col-4 col-md-2 col-form-label h5 text-muted text-right pt-3">Carga 1</label>
+                <div   class="col-6 col-md-5 input-group">
+                  <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text  bg-white border-0">Años</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="collapse" id="carga2">
+                <div class="form-group row justify-content-center mb-5">
+                  <label class="col-2 col-form-label h5 text-muted pt-3">Carga 2</label>
                   <div   class="col-5 input-group">
                     <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
                     <div class="input-group-prepend">
                       <div class="input-group-text  bg-white border-0">Años</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="collapse" id="carga2">
-                  <div class="form-group row mb-5">
-                    <label class="col-2 col-form-label h5 text-muted pt-3">Carga 2</label>
-                    <div   class="col-5 input-group">
-                      <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text  bg-white border-0">Años</div>
-                        <div class="input-group-append">
-                           <button class="btn rounded-0 border-0 text-col1" type="button" data-toggle="tooltip" data-placement="top" title="Eliminar carga"><i class="ic ic-trash"></i></button>
-                        </div>
+                      <div class="input-group-append">
+                         <button class="btn rounded-0 border-0 text-col1" type="button" data-toggle="tooltip" data-placement="top" title="Eliminar carga"><i class="ic ic-trash"></i></button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="form-group row">
-                  <div class="col-12">
-                    <small class="text-secondary font-italic float-left" >*Si tu carga es menor a "1 año", indica “0 años”.</small>
-                  </div>
+              <div class="form-group row">
+                <div class="col-12 text-center">
+                  <small class="text-black-50 font-italic " >*Si tu carga es menor a "1 año", indica “0 años”.</small>
                 </div>
               </div>
+
             </div>
 
 
 
 
-            <div class="form-group mb-5">
-              <label class="text-col1 h4">Indícanos tu renta imponible estimada</label>
-              <div class="label-hv-animate"><input type="text" class="form-control rounded-0 text-center control-animate border-0 bg-light" aria-describedby="renta imponible" placeholder="$500.000"></div>
-            </div>
-
-
-        
 
             <div class="form-group mt-5">
               <a href="configura-2.html" class="btn bg-col1 text-white d-block mx-auto float-md-right my-2 py-3 px-4 shadow-lg mr-1 btn-bubble">Siguiente</a>
