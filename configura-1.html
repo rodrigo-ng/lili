@@ -82,8 +82,8 @@
               </div>
 
               <div class="form-group row justify-content-center">
-                <label class="col-4 col-md-2 col-form-label h5 text-muted text-right pt-3">Carga 1</label>
-                <div   class="col-6 col-md-5 input-group">
+                <label class="col-3 col-sm-2 col-form-label h5 text-muted text-right pt-3">Carga 1</label>
+                <div   class="col-8 col-sm-5 input-group">
                   <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
                   <div class="input-group-prepend">
                     <div class="input-group-text  bg-white border-0">Años</div>
@@ -93,13 +93,15 @@
 
               <div class="collapse" id="carga2">
                 <div class="form-group row justify-content-center mb-5">
-                  <label class="col-2 col-form-label h5 text-muted pt-3">Carga 2</label>
-                  <div   class="col-5 input-group">
+                  <label class="col-3 col-sm-2 col-form-label h5 text-muted text-right pt-3">Carga 2</label>
+                  <div   class="col-8 col-sm-5 input-group">
                     <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
                     <div class="input-group-prepend">
                       <div class="input-group-text  bg-white border-0">Años</div>
                       <div class="input-group-append">
-                         <button class="btn rounded-0 border-0 text-col1" type="button" data-toggle="tooltip" data-placement="top" title="Eliminar carga"><i class="ic ic-trash"></i></button>
+                        <button class="btn rounded-0 border-0 text-col1" type="button" data-toggle="tooltip" data-placement="top" title="Eliminar carga">
+                          <i class="ic ic-trash"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -134,19 +136,40 @@
     
 
 
-<!-- JS -->
+  <!-- JS -->
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/bootstrap-datepicker.min.js"></script> 
+  <script src="assets/js/jquery.twbs-toggle-buttons.min.js"></script> 
 
-  <!-- Tooltip Boostrap -->
+   <!-- Tooltip Boostrap -->
   <script type="text/javascript">
     $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip();   
     });
   </script>
 
+  <!-- Toggle Radio Button -->
+  <script>
+   $(".btn-group-toggle").twbsToggleButtons();
+  </script>
+
+  <!-- Header FixedTop -->
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+    }
+  </script>
 
 
 

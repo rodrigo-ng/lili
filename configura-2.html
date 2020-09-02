@@ -60,7 +60,25 @@
               </h5>
             </div>
 
+           
 
+          <div class="form-group">
+            <div class="alert row" role="alert">
+              <div class="col-3 col-xl-2 align-self-sm-center"><img src="assets/images/heart.svg" class="mx-auto d-block w-50px" alt="Atención Red y Deducible"></div>
+              <ul  class="col-9 col-xl-10 mb-0 list-red h6 text-black-50">
+                <li>
+                  <span class="text-col1 font-weight-bold">
+                  Red:</span><br> grupo de clínicas en donde se activarán las coberturas de tu plan.
+                </li>
+              
+                <li class="mb-0">
+                  <span class="text-col1 font-weight-bold">Deducible:</span><br>
+                  así como viste en el video, el deducible es el monto de copago acumulado que tienes que pagar por persona en el año
+                   antes de que se activen las coberturas. Mientras más alto sea el deducible, más bajo será tu pago mensual.
+                </li>
+              </ul>
+            </div>
+          </div>
 
 
 
@@ -218,16 +236,25 @@
 
 
 
-<!-- JS -->
+  <!-- JS -->
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/bootstrap-datepicker.min.js"></script> 
   <script src="assets/js/jquery.twbs-toggle-buttons.min.js"></script> 
 
+   <!-- Tooltip Boostrap -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+  </script>
+
+  <!-- Toggle Radio Button -->
   <script>
-$(".btn-group-toggle").twbsToggleButtons();
-</script>
+   $(".btn-group-toggle").twbsToggleButtons();
+  </script>
+
 
 
 

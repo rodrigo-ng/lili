@@ -123,11 +123,40 @@
     
 
 
-<!-- JS -->
+  <!-- JS -->
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/bootstrap-datepicker.min.js"></script> 
+  <script src="assets/js/jquery.twbs-toggle-buttons.min.js"></script> 
+
+   <!-- Tooltip Boostrap -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+  </script>
+
+  <!-- Toggle Radio Button -->
+  <script>
+   $(".btn-group-toggle").twbsToggleButtons();
+  </script>
+
+  <!-- Header FixedTop -->
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+    }
+  </script>
 
 
 
