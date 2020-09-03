@@ -60,7 +60,7 @@
               Precio y cobertura a tu medida.
             </p>
 
-            <a href="#explora" class="col-12 col-md-6 btn shadow-lg bg-col1 text-white mt-2 py-3 font-weight-bold btn-bubble">
+            <a href="#explora" class="col-12 col-md-6 btn shadow-lg bg-col1 text-white mt-2 py-3 font-weight-bold btn-bubble anchoranim">
               Conoce Lili
             </a>
 
@@ -106,10 +106,10 @@
               <div class="carousel-inner px-5">
                 <div class="carousel-item px-4 px-md-5 active">
                   <div class="row">
-                    <div class="col-12 col-sm-6 order-sm-1 col-lg-5">
+                    <div class="col-12 col-md-6 order-md-1 col-lg-5">
                       <img src="assets/images/whatif05.png" class="d-block w-100" alt="Tu Salud, Simple, Conmigo">
                     </div>
-                    <div class="col-12 col-sm-6 order-sm-2 col-lg-7 text-center text-md-left align-self-center text-white">
+                    <div class="col-12 col-md-6 order-md-2 col-lg-7 text-center text-md-left align-self-center text-white">
                       <span class="d-block pb-4 h2 title">¿En qué consiste?</span>
                         <ul class="h4">
                           <li class="mb-3">
@@ -127,10 +127,10 @@
                 </div>
                 <div class="carousel-item px-5">
                   <div class="row">
-                    <div class="col-12 col-sm-6 order-sm-1 col-lg-5">
+                    <div class="col-12 col-md-6 order-md-1 col-lg-5">
                       <img src="assets/images/whatif06.png" class="d-block w-100" alt="Tu Salud, Simple, Conmigo">
                     </div>
-                    <div class="col-12 col-sm-6 order-sm-2 col-lg-7 text-center text-md-left align-self-center text-white">
+                    <div class="col-12 col-md-6 order-md-2 col-lg-7 text-center text-md-left align-self-center text-white">
                       <span class="d-block pb-4 h2 title">A través de tu cuenta podrás:</span>
                         <ul class="h4">
                           <li class="mb-3">Agendar las consultas con tu médico de cabecera en modo presencial o telemedicina.</li>
@@ -142,10 +142,10 @@
                 </div>
                 <div class="carousel-item px-5">
                   <div class="row">
-                    <div class="col-12 col-sm-6 order-sm-1 col-lg-5">
+                    <div class="col-12 col-md-6 order-md-1 col-lg-5">
                       <img src="assets/images/whatif07.png" class="d-block w-100" alt="Tu Salud, Simple, Conmigo">
                     </div>
-                    <div class="col-12 col-sm-6 order-sm-2 col-lg-7 text-center text-md-left align-self-center text-white">
+                    <div class="col-12 col-md-6 order-md-2 col-lg-7 text-center text-md-left align-self-center text-white">
                       <span class="d-block pb-4 h2 title">Beneficios especiales</span>
                        <ul class="h4">
                         <li class="mb-3">
@@ -297,12 +297,12 @@
           </div>
           <div class="col-md-3 align-self-center">
               <a href="configura-0.html" class="btn bg-col5 text-white d-block mx-auto h3 float-md-left my-2 py-3 px-4 shadow-lg mr-1 btn-bubble">
-                Arma tu plan
+                Continuar
               </a>
           </div>
         </div>
 
-        <a class="rounded-circle position-absolute shadow bg-white text-primary text-white text-center dynamicanchor-footer h3" href="#top"><i class="ic ic-arrowright rotate-m90"></i></a>
+        <a class="rounded-circle position-absolute shadow bg-white text-primary text-white text-center dynamicanchor-footer h3 anchoranim" href="#top"><i class="ic ic-arrowright rotate-m90"></i></a>
 
       </div>
 
@@ -320,9 +320,15 @@
 
 
 <!-- Ancla dinamica -->
-  <script src="assets/js/scroll-to-anchor.js"></script>
   <script>
-    $(document).scrollToAnchor();
+    $('.anchoranim').click(function(e){       
+    e.preventDefault();  
+    var strAncla=$(this).attr('href');
+      $('body,html').stop(true,true).animate({        
+        scrollTop: $(strAncla).offset().top
+      },1000);
+    
+  });
   </script>
 
 
