@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/lili-chile.svg" alt="Logo Lili" class="h-40px" ></a>
+            <div class="navbar-brand"><img src="assets/images/lili-chile.svg" alt="Logo Lili" class="h-40px" ></div>
           </div>
           <div class="col-6"></div>
         </div>
@@ -49,7 +49,8 @@
 
 
             <span class="h6 text-black-50 m-0">Paso 2</span>
-            <h2 class="title mb-5">Datos personales</h2>
+            <h2 class="title mb-0">Datos personales</h2>
+            <h5 class="text-secondary mb-5">Para avanzar al siguiente paso debes seleccionar a lo menos una opción para continuar </h5>
             
 
 
@@ -62,14 +63,16 @@
 
 
             <div class="form-group row">
-              <label class="col-9 mb-0 col-form-label h4">¿Tienes cargas?</label>
+              <div class="col-9">
+                <label class="w-100 mb-0  col-form-label h4">¿Tienes cargas?</label>
+                <span class="text-black-50 font-weight-light"> Si las tienes, ingrésalas con sus edades</span>
+              </div>
               <div class="col-3 mb-0">
                 <div class="float-right custom-control custom-switch">
                   <input type="checkbox" class="custom-control-input" id="tengocargas" data-toggle="collapse" data-target="#sumarcargas">
                   <label class="custom-control-label" for="tengocargas"></label>
                 </div>
               </div>
-              <div class="col-12"><span class="text-black-50 font-weight-light"> Si las tienes, ingrésalas con sus edades</span></div>
             </div>
 
 
@@ -82,7 +85,7 @@
               </div>
 
               <div class="form-group row justify-content-center">
-                <label class="col-3 col-sm-2 col-form-label h5 text-muted text-right pt-3">Carga 1</label>
+                <label class="col-4 col-sm-2 col-form-label h5 text-muted text-right pt-3">Carga 1</label>
                 <div   class="col-8 col-sm-5 input-group">
                   <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
                   <div class="input-group-prepend">
@@ -93,7 +96,7 @@
 
               <div class="collapse" id="carga2">
                 <div class="form-group row justify-content-center mb-5">
-                  <label class="col-3 col-sm-2 col-form-label h5 text-muted text-right pt-3">Carga 2</label>
+                  <label class="col-4 col-sm-2 col-form-label h5 text-muted text-right pt-3">Carga 2</label>
                   <div   class="col-8 col-sm-5 input-group">
                     <input type="text" class="form-control text-center rounded-0 border-0 bg-light" maxlength="2" placeholder="0" style="max-width: 100px;">
                     <div class="input-group-prepend">
@@ -120,7 +123,13 @@
 
 
 
-            <div class="form-group mt-5">
+            <div class="form-group mt-5 mb-0 text-right">
+              <span class=" h6 text-col6">
+                <i class="ic ic-alertbubble mr-1"></i>
+                Debes seleccionar una opción para continuar 
+              </span>
+            </div>
+            <div class="form-group">
               <a href="configura-2.html" class="btn bg-col1 text-white d-block mx-auto float-md-right my-2 py-3 px-4 shadow-lg mr-1 btn-bubble">Siguiente</a>
               <a href="configura-0.html" class="btn float-md-right text-col1 text-hv-col1 d-block mx-auto mr-md-2 my-2 py-3 px-4 btn-bubble">Volver</a>
             </div>
